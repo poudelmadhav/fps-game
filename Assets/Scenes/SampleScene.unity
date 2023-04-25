@@ -1048,7 +1048,7 @@ GameObject:
   - component: {fileID: 852597035}
   - component: {fileID: 852597034}
   m_Layer: 5
-  m_Name: Button
+  m_Name: LeaveRoomButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1118,7 +1118,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 852597035}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2004947197}
+        m_TargetAssemblyTypeName: Launcher, Assembly-CSharp
+        m_MethodName: LeaveRoom
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &852597035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2486,7 +2498,7 @@ GameObject:
   - component: {fileID: 1654408584}
   - component: {fileID: 1654408583}
   m_Layer: 5
-  m_Name: RoomRameText
+  m_Name: RoomNameText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3236,6 +3248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomNameInputField: {fileID: 1598908442}
   errorText: {fileID: 1453377458}
+  roomNameText: {fileID: 1654408583}
 --- !u!114 &2004947198
 MonoBehaviour:
   m_ObjectHideFlags: 0
