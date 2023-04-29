@@ -11,10 +11,6 @@ public class UsernameDisplay : MonoBehaviour
 
     void Start()
     {
-        if (playerPV.IsMine) {
-            text.text = PhotonNetwork.NickName;
-        } else {
-            text.text = playerPV.Owner.NickName;
-        }
+        text.text = playerPV.Owner.NickName;
     }
 }
